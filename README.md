@@ -6,8 +6,8 @@
 Quick instructions:
 
 ```bash
-CID=$(docker run -d --privileged -p 1194:1194/udp mvs3d/dockvpn)
-docker run -t -i -p 8080:8080 --volumes-from $CID umputun/dockvpn serveconfig
+CID=$(sudo docker run -d --privileged -p 1194:1194/udp mvs3d/dockvpn)
+sudo docker run -t -i -p 8080:8080 --volumes-from $CID mvs3d/dockvpn serveconfig
 ```
 
 Now download the file located at the indicated URL. You will get a
